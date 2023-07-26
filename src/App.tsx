@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons/faQuoteLeft';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter'
 import uniqolor from 'uniqolor';
 
 function App() {
@@ -56,7 +56,7 @@ function App() {
                         <button
                             className="new-quote"
                             onClick={fetchQuote}
-                            style={{ backgroundColor: background, color: "white" }}
+                            style={{ backgroundColor: background }}
                         >New Quote</button>
                         <div>
                             <a
@@ -67,7 +67,7 @@ function App() {
                         </div>
 
                     </>)
-                    : (<h1>:)</h1>)
+                    : (<h1 style={{ color: background }}>:)</h1>)
             }
         </div >
     );

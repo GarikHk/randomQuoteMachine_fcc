@@ -3,10 +3,12 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100dvh;
     font-family: 'Inter', sans-serif;
 }
 
@@ -24,7 +26,7 @@ body {
 }
 
 .new-quote {
-    color: black;
+    color: white;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -34,8 +36,9 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.new-quote:hover {
-    background-color: #0062cc;
+.new-quote:hover,
+.tweet-quote:hover {
+    filter: drop-shadow(0rem 0rem .7rem rgba(0, 0, 0, 0.7));
 }
 
 .tweet-quote {
